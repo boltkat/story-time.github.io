@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>story-time</title>
+    <link rel = "icon" href="storytime.png" 
+    type = "image/x-icon">
+    <style>
+       
+       
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ 
+       * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  color: #f1f1f1;
+  
+  text-decoration: none;
+  margin: none;
+  color: yellow;
+  font-family: 'Bebas Neue', cursive;
+  left: 44%;
+  top: 5%;
+  
+}
+
+.all{
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.linker{
+    top: 75%;
+    left: 42%;
+    position: absolute;
+}
+.al{
+    font: 700;
+    font-size: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid yellow;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Shippori Antique', sans-serif;
+    text-decoration: none;
+}
+
+.al:hover{
+    box-shadow: 1px 2px 5px black;
+    background-color: brown;
+    border: 2px solid rgb(184, 67, 21);
+}
+
+.al:active{
+    box-shadow: 1px 1px 3px black;
+
+}
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="rain.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+      <div class="content">
+          <center>
+            <a class="all" href="index1.html">Story-Time</a>
+          </center>
+      </div>
+      <div class="linker">
+        <a class="al" href="index1.html">Just Read 📚</a>
+      </div>
+      
+      <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
+</body>
+</html>

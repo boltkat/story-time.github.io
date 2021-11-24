@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>comming Soon</title>
+
+        <link rel = "icon" href="storytime.png" 
+                type = "image/x-icon">
+<style>
+    
+    body{
+        background-color: black;
+
+    }
+    
+    nav{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 96px;
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(160%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+    
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    background-color: rgb(204, 87, 87);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+a:hover{
+    background-color: rgb(160, 104, 104);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 5px black;
+}
+
+</style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li>
+                coming soon ....
+                <span></span><span></span><span></span><span></span>
+              </li>
+           </ul>  
+        </nav>
+          <center>
+            <footer>
+
+                <p><a href="index1.html">Home</a></p>
+            </footer>
+          </center>
+        
+          
+    
+    </body>
+</html>
